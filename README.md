@@ -28,6 +28,27 @@ When `controller.text` isn't empty, a button with `x` icon is show. When user cl
 ```dart
 Widget build(BuildContext context) {
   final controller = TextEditingController();
+
+  return TextField(
+    decoration: InputDecoration(
+      suffixIcon: TextFieldSuffixButton(
+        controller: controller,
+        enablePaste: true,
+      ),
+    ),
+    controller: controller,
+  );
+}
+```
+
+When `enablePaste` set to `true`, widget render a paste button when text is empty, and a clear button when text is not empty.
+The paste button allow user to paste the text from clipboard into the text field when clicked.
+
+## Show button only when focused
+
+```dart
+Widget build(BuildContext context) {
+  final controller = TextEditingController();
   final focusNode = FocusNode();
 
   return TextField(

@@ -1,6 +1,6 @@
 name: text_field_suffix_button
 description: A button dedicated to be used in `TextField.decoration.suffixIcon`.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/timnew/text_field_suffix_button
 
 environment:
