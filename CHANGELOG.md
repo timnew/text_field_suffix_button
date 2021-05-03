@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.1.0 (2021-05-04)
 
-* TODO: Describe initial release.
+* Extract the widget into a package
